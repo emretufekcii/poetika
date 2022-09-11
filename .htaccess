@@ -1,0 +1,37 @@
+RewriteEngine on
+
+
+#ErrorDocument 404 http://www.yanlisuzantigirdin.com
+
+#Seo url oluşturma
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+
+RewriteRule ^sayfa-([0-9a-zA-Z-_]+)  menudetay.php?sef=$1 [L,QSA]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
